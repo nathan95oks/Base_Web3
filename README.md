@@ -50,8 +50,28 @@ To set the `SEPOLIA_PRIVATE_KEY` config variable using `hardhat-keystore`:
 npx hardhat keystore set SEPOLIA_PRIVATE_KEY
 ```
 
+
+# Proyecto Hardhat Hola 👋
+
+## Requisitos
+- Node.js v22.19.0
+- npm
+
+## Instalación
+```bash
+git clone https://github.com/TU_USUARIO/TU_REPO.git
+cd TU_REPO
+npm install
+
 After setting the variable, you can run the deployment with the Sepolia network:
 
 ```shell
 npx hardhat ignition deploy --network sepolia ignition/modules/Counter.ts
 ```
+
+npm run compile      # Compilar contratos
+npm run node         # Correr blockchain local
+npm run deploy:local # Desplegar en localhost
+npm run deploy:sepolia # Desplegar en Sepolia (requiere .env)
+npm run test         # Ejecutar tests
+
